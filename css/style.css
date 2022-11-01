@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap');
 
+/*----Reset---*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Source Serif Pro', serif;
 }
+
 
 /*--- HEADER ----*/
 
@@ -96,3 +98,11 @@ body{
 }
 
 /*---END FOOTER--*/
+
+/*--FORMULARIO--/*/
+.flex-form {
+    display: flex;
+    padding: 20px; 
+    align-items: center;
+    justify-content: space-around;
+}

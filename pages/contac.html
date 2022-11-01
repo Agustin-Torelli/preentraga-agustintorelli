@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NailsRuizDiaz</title>
+    <title>NailsRuizDiaz - Contacto</title>
+    <meta name="description" content="Envianos un mensaje">
+    <meta name="keywords" content="Uñas , Nails , Esmastados , Semis , Permantentes">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/favicon.ico.jpg" type="image/x-icon">
@@ -15,8 +17,8 @@
 
 <body>
     <header>
-         <!---Inicio de la barra navegacion-->
-         <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-3 m-0">
+        <!---Inicio de la barra navegacion-->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-3 m-0">
             <div class="container-fluid">
                 <a class="navbar-brand" href="">NailsbyRoRuizDiaz</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -51,29 +53,29 @@
     </header>
 
     <main class="vh-height">
-          <!--Jumbotron incia-->
-          <div class=" jumbotron mt-0 p-5">
+        <!--Jumbotron incia-->
+        <div class=" jumbotron mt-0 p-5">
             <h1>Contactame</h1>
         </div>
         <!--Jumbotron fin-->
-        <section class="container">
-            <div class="row">
-                <div class="col md-6">
-                    <h2>Contactame.</h2>
-                </div>
-            <div class="col md-6">
-                <h2>Informacion de contacto</h2>
+        <section class="flex-form">
+            <div>
+                <h2>Empezá hoy el cambio, reserva tu turno </h2>
+                <form class="form" action="/formulario" method="post">
+                    <input type="text" name="Nombre" placeholder="Nombre">
+                    <input type="text" name="Apellido" placeholder="Apellido">
+                    <input type="email" name="Email" placeholder="Email">
+                    <input type="text" name="Dia" placeholder="Dia">
+                    <input type="text" name="servicio" placeholder="Servicio">
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-
+            <div>
+                <iframe class="ubicacion"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.6047134105656!2d-60.60817258422753!3d-33.01419548264216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7a994d75dca9d%3A0xa05f658fb43c7791!2sC%C3%B3rdoba%20159%2C%20S2000%20Villa%20Gdor.%20Galvez%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1664498091278!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <iframe class="ubicacion"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.6047134105656!2d-60.60817258422753!3d-33.01419548264216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7a994d75dca9d%3A0xa05f658fb43c7791!2sC%C3%B3rdoba%20159%2C%20S2000%20Villa%20Gdor.%20Galvez%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1664498091278!5m2!1ses!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tempore quaerat corrupti totam est
-                nostrum dignissimos voluptas optio, doloribus voluptatum non maxime suscipit praesentium perspiciatis
-                distinctio dicta consectetur repudiandae impedit?</div>
         </section>
     </main>
     <footer class="footer-contenedor">

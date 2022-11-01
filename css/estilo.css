@@ -1,106 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Source Serif Pro", serif;
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import "scss/variables.scss";
+ *   |         ^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   scss\main.scss 1:9  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"scss/variables.scss\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\main.scss 1:9  root stylesheet";
 }
-
-/*--- HEADER ----*/
-/*---END HEADER ----*/
-/*---MAIN ----*/
-body {
-  background-color: rgba(241, 228, 184, 0.993);
-}
-
-.vh-height {
-  min-height: 85vh;
-}
-
-.jumbotron {
-  background-image: url("../img/pexels-lisa-fotios-851219.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  text-shadow: 0 0 5px rgb(0, 0, 0);
-  border-radius: 0;
-}
-
-.jumbotron h1 {
-  font-size: 50px;
-  font-weight: bolder;
-  color: rgb(223, 223, 223);
-}
-
-.jumbotron p {
-  font-size: 20px;
-  color: rgb(253, 253, 253);
-}
-
-.form {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.form input {
-  width: 90%;
-  height: 30px;
-  margin: 0.5rem;
-}
-
-.form button {
-  padding: 0.5em 1em;
-  border: none;
-  background: rgb(100, 200, 255);
-  cursor: pointer;
-}
-
-/*---END MAIN---*/
-/*--SERVICIOS-MAIN--*/
-.flex-container {
-  display: flex;
-  padding: 10px;
-  align-content: center;
-}
-
-.servicios h1 {
-  text-align: center;
-  font-size: 30px;
-}
-
-.servicios img {
-  width: 200px;
-  border-radius: 20px;
-}
-
-/*---FOOTER---*/
-.footer-contenedor {
-  padding: 15px;
-  background-color: rgb(0, 0, 0);
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  color: rgb(255, 255, 255);
-}
-
-.redes a i {
-  font-size: 30px;
-  text-align: center;
-  padding: 5px 10px;
-  color: rgb(255, 255, 255);
-}
-
-.redes a i:hover {
-  transform: scale(1.2);
-  transition: all 1s ease;
-  color: rgb(97, 97, 97);
-}
-
-/*---END FOOTER--*/
-
-/*# sourceMappingURL=estilo.css.map */
