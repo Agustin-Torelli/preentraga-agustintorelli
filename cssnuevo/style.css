@@ -1,10 +1,6 @@
-@import "scss/variables.scss";
-@import "scss/reset.scss";
-@import "scss/header.scss";
-@import "scss/body.scss";
-@import "scss/footer.scss";
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap');
 
+/*----Reset---*/
 * {
     margin: 0;
     padding: 0;
@@ -12,16 +8,15 @@
     font-family: 'Source Serif Pro', serif;
 }
 
+
 /*--- HEADER ----*/
 
 /*---END HEADER ----*/
 /*---MAIN ----*/
 body{
-    background-color: rgba(241, 228, 184, 0.993);
+    background-color: #ddb9fffd;
 }
-.vh-height{
-    min-height: 85vh;
-}
+
 .jumbotron{
     background-image: url("../img/pexels-lisa-fotios-851219.jpg");
     background-size: cover;
@@ -64,19 +59,41 @@ body{
 
 /*---END MAIN---*/
 /*--SERVICIOS-MAIN--*/
+h1 {
+    text-align: center;
+    font-size: 50px;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
 .flex-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+}
+.card__servicios{
+    background-color: #d3c8c8;
     display: flex;
     padding: 10px;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 4px 10px 0 #000000;
+    height: 500px;
+    width: 500px;
+    margin: 10px;
 }
-.servicios h1{
+.card__servicios p{
+    font-size: 1.2rem;
     text-align: center;
-    font-size: 30px;
+    margin-top: 50px;
 }
-.servicios img {
+.card__servicios img {
     width: 200px;
-    border-radius: 20px;
+    border-radius: 50%;
+    box-shadow: 2px 4px 10px 0 #000000; ;
 }
+/*--FIN SERVICIOS-MAIN--*/
 /*---FOOTER---*/
 .footer-contenedor {
     padding: 15px;
@@ -101,3 +118,28 @@ body{
 }
 
 /*---END FOOTER--*/
+
+/*--FORMULARIO--/*/
+.flex-form {
+    display: flex;
+    padding: 20px; 
+    align-items: center;
+    justify-content: space-around;
+}
+/*---MEDIA QUERYS--*/
+@media screen and (max-width :480px) {
+    .flex-container {
+    grid-template-columns: 1fr;
+    margin: 0px;
+    gap: 10px;
+}
+.card__servicios {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 10px;
+    
+} 
+.flex-form {
+    flex-direction: column;
+}
+}

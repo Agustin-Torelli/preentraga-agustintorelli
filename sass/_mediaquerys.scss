@@ -1,0 +1,39 @@
+/*---MEDIA QUERYS--*/
+@media screen and (max-width :760px) {
+.flex-container {
+    grid-template-columns: 1fr;
+    margin: 0px;
+    gap: 10px;
+}
+.card__servicios {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 10px;
+    
+} 
+.flex-form {
+    flex-direction: column;
+}
+.vh-height2{
+    height: 100%;
+}
+}
+@media screen and (max-width :480px) {
+    .flex-container {
+    grid-template-columns: 1fr;
+    margin: 0px;
+    gap: 10px;
+}
+.card__servicios {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 10px;
+    
+} 
+.flex-form {
+    flex-direction: column;
+}
+.vh-height2{
+    height: 100%
+}
+}
