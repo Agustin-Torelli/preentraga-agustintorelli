@@ -1,24 +1,30 @@
 /*---FOOTER---*/
 .footer-contenedor {
-    padding: 15px;
-    background-color: rgb(0, 0, 0);
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    color: rgb(255, 255, 255);
+	margin-top: 40px;
+	padding: 15px;
+	background-color: rgb(0, 0, 0);
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	color: rgb(255, 255, 255);
+	h3 {
+		font-size: 20px;
+	}
 }
-
-.redes a i {
-    font-size: 30px;
-    text-align: center;
-    padding: 5px 10px;
-    color: rgb(255, 255, 255);
-}
-
-.redes a i:hover {
-    transform: scale(1.2);
-    transition: all 1s ease;
-    color: rgb(97, 97, 97);
+.redes {
+	a {
+		i {
+			font-size: 30px;
+			text-align: center;
+			padding: 5px 10px;
+			color: rgb(255, 255, 255);
+			&:hover {
+				transform: scale(1.2);
+				transition: all 1s ease;
+				color: rgb(97, 97, 97);
+			}
+		}
+	}
 }
 
 /*---END FOOTER--*/
