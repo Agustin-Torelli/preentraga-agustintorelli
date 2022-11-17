@@ -1,5 +1,5 @@
 body{
-    background-color: #d2c0e4fd;
+    background-color: $bg-color;
 }
 .vh-height2{
     height: 85vh;
@@ -8,7 +8,7 @@ body{
 /*JumbotronInicia*/
 /*--contacto--*/
 .jumbotron{
-    background-image: url(../img/computer-1185626_640.jpg);
+    background-image: url(../img/computadora.jpg);
     background-size: cover;
     background-position: center center;
     height: 450px;
@@ -27,16 +27,14 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex();
 }
 .menuprincipal {
 	align-items: center;
 	text-align: center;
 	button {
 		height: 40px;
-		background-color: #d2c0e4fd;
+		background-color: $bg-color;
 		font-size: 20px;
 		border-radius: 5px;
 		font-weight: bold;
@@ -46,9 +44,10 @@ body{
 }
 button {
 	&:hover {
-		background-color: #a24ef1;
+		background-color: $sd-color;
 	}
 }
+
 /*---Form---*/
 .contact-in {
 	width: 80%;
@@ -112,7 +111,7 @@ button {
 	border: none;
 	outline: none;
 	border-radius: 50px;
-	background: #8e2de2;
+	background: $sd-color;
 	color: #fff;
 	text-transform: uppercase;
 	padding: 10px 0;
@@ -136,7 +135,7 @@ h1 {
   }
   
   .card__servicios {
-    background-color: #d4b7f1fd;
+    background-color: $bg-color;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,10 +157,12 @@ h1 {
 .card__servicios img {
     width: 200px;
     border-radius: 50%;
-    box-shadow: 2px 4px 10px 0 #000000; ;
+    box-shadow: 2px 4px 10px 0 #000000;
+	background-position: center;
+	background-size: cover;
 }
 .card__servicios:hover{
-    background-color: #8e2de2;
+    background-color: $sd-color;
   }
 /*--FIN SERVICIOS-MAIN--*/
 
@@ -191,7 +192,7 @@ h1 {
 .titulos-trabajo h2 {
     text-align: center;
     font-weight: bold;
-    background-color: #8e2de2
+    background-color: $sd-color;
   }
   .titulos-trabajo p{
     text-align: center;

@@ -1,4 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap');
-$negro:#000000;
-$rosa: #ddb9fffd;
+$bg-color:#d2c0e4fd;
+$sd-color:#8e2de2;
+%redes{
+    font-size: 30px;
+    text-align: center;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    &:hover {
+        transform: scale(1.2);
+        transition: all 1s ease;
+        color: rgb(97, 97, 97);
+    }
+}
 
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}

@@ -13,17 +13,7 @@
 }
 .redes {
 	a {
-		i {
-			font-size: 30px;
-			text-align: center;
-			padding: 5px 10px;
-			color: rgb(255, 255, 255);
-			&:hover {
-				transform: scale(1.2);
-				transition: all 1s ease;
-				color: rgb(97, 97, 97);
-			}
-		}
+		@extend %redes;
 	}
 }
 

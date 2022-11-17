@@ -1,4 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap"); /*----Reset---*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap");
+.redes a {
+  font-size: 30px;
+  text-align: center;
+  padding: 5px 10px;
+  color: rgb(255, 255, 255);
+}
+.redes a:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+  color: rgb(97, 97, 97);
+}
+
+/*----Reset---*/
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +34,7 @@ body {
 /*JumbotronInicia*/
 /*--contacto--*/
 .jumbotron {
-  background-image: url(../img/computer-1185626_640.jpg);
+  background-image: url(../img/computadora.jpg);
   background-size: cover;
   background-position: center center;
   height: 450px;
@@ -55,7 +68,7 @@ body {
 }
 
 button:hover {
-  background-color: #a24ef1;
+  background-color: #8e2de2;
 }
 
 /*---Form---*/
@@ -152,7 +165,7 @@ h1 {
 }
 
 .card__servicios {
-  background-color: rgba(212, 183, 241, 0.9921568627);
+  background-color: rgba(210, 192, 228, 0.9921568627);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,6 +191,8 @@ h1 {
   width: 200px;
   border-radius: 50%;
   box-shadow: 2px 4px 10px 0 #000000;
+  background-position: center;
+  background-size: cover;
 }
 
 .card__servicios:hover {
@@ -233,18 +248,6 @@ h1 {
 }
 .footer-contenedor h3 {
   font-size: 20px;
-}
-
-.redes a i {
-  font-size: 30px;
-  text-align: center;
-  padding: 5px 10px;
-  color: rgb(255, 255, 255);
-}
-.redes a i:hover {
-  transform: scale(1.2);
-  transition: all 1s ease;
-  color: rgb(97, 97, 97);
 }
 
 /*---END FOOTER--*/
