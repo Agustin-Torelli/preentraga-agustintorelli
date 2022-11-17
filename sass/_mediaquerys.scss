@@ -37,7 +37,13 @@
     .vh-height2 {
         height: 100%;
     }
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+    }
 }
+
 
     @media screen and (max-width: 480px) {
         .flex-container {
@@ -59,4 +65,11 @@
         .vh-height2 {
             height: 100%;
         }
+        .btn-wsp{
+            width:63px;
+            height:63px;
+            line-height: 66px;
+        }
     }
+    
+
